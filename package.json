@@ -1,5 +1,5 @@
 {
-  "name": "vite-template-solid",
+  "name": "hexlab-template",
   "version": "0.0.0",
   "description": "",
   "scripts": {
@@ -8,13 +8,18 @@
     "build": "vite build",
     "serve": "vite preview"
   },
-  "license": "MIT",
+  "license": "0BSD",
   "devDependencies": {
+    "@unocss/preset-rem-to-px": "^0.51.8",
     "typescript": "^4.9.5",
-    "vite": "^4.1.1",
+    "unocss": "^0.51.8",
+    "vite": "^4.3.1",
     "vite-plugin-solid": "^2.5.0"
   },
   "dependencies": {
+    "@unocss/reset": "^0.51.8",
+    "@zag-js/pressable": "^0.6.0",
+    "@zag-js/solid": "^0.5.0",
     "solid-js": "^1.6.10"
   }
 }

@@ -110,9 +110,7 @@ const App: Component = () => {
         </div>
       </section>
       <section class="flex flex-col gap-20 py-64 px-16 text-center items-center">
-        <div class="pb-20">
-          photo goes here
-        </div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Portrait_Hippopotamus_in_the_water.jpg/800px-Portrait_Hippopotamus_in_the_water.jpg" alt="hippo" class="w-348 h-400 rounded-full pb-20" />
         <IconRadio />
         <div>
           <p class='hex-type-eyebrow text-primary'>
@@ -203,7 +201,213 @@ const App: Component = () => {
           </div>
         </div>
       </section>
+      <section class="py-64 px-16 text-center items-center">
+        <div class="flex flex-col gap-20 text-center items-center">
+          <IconRadio />
+          <div>
+            <p class='hex-type-eyebrow text-primary'>
+              Our team
+            </p>
+            <p class="hex-type-h2">
+              <span class="color-black">
+                Meet with our awesome team
+              </span>
+              <span class="color-primary">.</span>
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col gap-20 mt-48">
+          <div class="flex flex-col gap-20 text-center items-center">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Portrait_Hippopotamus_in_the_water.jpg/800px-Portrait_Hippopotamus_in_the_water.jpg" alt="hippo" class="w-244 h-340 rounded-full" />
+            <div class="flex flex-col gap-8 text-center">
+              <p class="hex-type-h4">
+                David Snow
+              </p>
+              <p class="hex-type-body-medium color-gray">
+                Sr. UI/UX Designer
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="flex flex-col gap-20 py-64 px-16">
+        <div class="h-88 w-88 flex justify-center items-center">
+          <img src='/assets/star.png' alt='star' class='w-64 h-64' />
+        </div>
+        <div class="flex flex-col gap-20">
+          <p class="hex-type-eyebrow text-primary">
+            Testimonials
+          </p>
+          <p class="hex-type-h2">
+            <span class="color-black">
+              What our clients say about us
+            </span>
+            <span class="color-primary">.</span>
+          </p>
+          {/* arrows */}
+          <div class="flex flex-row gap-12">
+            <Button class="flex justify-center items-center bg-primary rounded-full w-40 h-40">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.2541 19.7589C16.5522 19.4667 16.5793 19.0095 16.3354 18.6873L16.2541 18.595L9.52658 12L16.2541 5.40503C16.5522 5.11283 16.5793 4.65558 16.3354 4.33338L16.2541 4.24106C15.956 3.94887 15.4896 3.9223 15.161 4.16137L15.0668 4.24106L7.7459 11.418C7.44784 11.7102 7.42074 12.1675 7.66461 12.4897L7.7459 12.582L15.0668 19.7589C15.3947 20.0804 15.9262 20.0804 16.2541 19.7589Z" fill="white" />
+              </svg>
+            </Button>
+            <Button class="flex justify-center items-center bg-primary rounded-full w-40 h-40">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.7459 19.7589C7.44784 19.4667 7.42074 19.0095 7.66461 18.6873L7.7459 18.595L14.4734 12L7.7459 5.40503C7.44784 5.11283 7.42074 4.65558 7.66461 4.33338L7.7459 4.24106C8.04396 3.94887 8.51037 3.9223 8.83904 4.16137L8.93321 4.24106L16.2541 11.418C16.5522 11.7102 16.5793 12.1675 16.3354 12.4897L16.2541 12.582L8.93321 19.7589C8.60534 20.0804 8.07376 20.0804 7.7459 19.7589Z" fill="white" />
+              </svg>
+            </Button>
+          </div>
+        </div>
+        <div class="flex flex-col gap-12 p-16">
+          <img src="/assets/quote.png" alt="quote" class="w-28 h-28" />
+          <p class="hex-type-body text-gray-dark">
+            I’m trusted my company in allies and the results have been satisfying because my company has growing.
+          </p>
+          <img src="/assets/theresa.png" alt="theresa" class="w-56 h-56 rounded-full" />
+          <div class="flex flex-col gap-8">
+            <p class="hex-type-h4 text-black">
+              Theresa Webb
+            </p>
+            <p class="hex-type-body-medium text-gray">
+              Product Manager
+            </p>
+          </div>
+          <div class="flex flex-row gap-4">
+            <IconStar />
+            <IconStar />
+            <IconStar />
+            <IconStar />
+            <IconStar />
+          </div>
+        </div>
+        <div class="flex flex-col gap-12 p-16">
+          <img src="/assets/quote.png" alt="quote" class="w-28 h-28" />
+          <p class="hex-type-body text-gray-dark">
+            I’m trusted my company in allies and the results have been satisfying because my company has growing.
+          </p>
+          <img src="/assets/theresa.png" alt="theresa" class="w-56 h-56 rounded-full" />
+          <div class="flex flex-col gap-8">
+            <p class="hex-type-h4 text-black">
+              Theresa Webb
+            </p>
+            <p class="hex-type-body-medium text-gray">
+              Product Manager
+            </p>
+          </div>
+          <div class="flex flex-row gap-4">
+            <IconStar />
+            <IconStar />
+            <IconStar />
+            <IconStar />
+            <IconStar />
+          </div>
+        </div>
+      </section >
+      <section class="flex flex-col gap-20 py-64 px-16 text-center items-center">
+        <div class="flex items-center justify-center w-136 h-136">
+          <img src="/assets/mailbox.png" alt="mailbox" class="w-120 h-120" />
+        </div>
+        <div>
+          <p class="hex-type-eyebrow text-primary">
+            Subscribe
+          </p>
+          <p class="hex-type-h2">
+            <span class="color-black">Subscribe to get the latest news about us</span>
+            <span class="color-primary">.</span>
+          </p>
+        </div>
+        <p class="hex-type-body text-gray-dark">
+          We recommended you to subscribe to our newspaper, drop your email below to get daily update about us.
+        </p>
+        {/* TODO: email input */}
+      </section>
+      <footer class="flex flex-col gap-40 py-64 px-16 bg-gray-darker">
+        <div class="flex flex-col gap-12">
+          <p class="hex-type-h4">
+            <span class="color-white">Hexlab</span>
+            <span class="color-primary">.</span>
+          </p>
+          <p class="hex-type-body-medium text-gray-lighter">
+            Hexlab is a digital agency that has evolved to meet the changing needs of marketing in the digital age.
+          </p>
+        </div>
+        <div class="flex flex-col gap-12">
+          <p class="hex-type-h4">
+            <span class="color-white">About</span>
+            <span class="color-primary">.</span>
+          </p>
+          <div class="grid grid-cols-2 gap-8 w-50%">
+            <a href="#" class="hex-type-body-medium text-gray-lighter">
+              About Us
+            </a>
+            <a href="#" class="hex-type-body-medium text-gray-lighter">
+              Services
+            </a>
+            <a href="#" class="hex-type-body-medium text-gray-lighter">
+              Our team
+            </a>
+            <a href="#" class="hex-type-body-medium text-gray-lighter">
+              Portfolio
+            </a>
+            <a href="#" class="hex-type-body-medium text-gray-lighter">
+              News
+            </a>
+            <a href="#" class="hex-type-body-medium text-gray-lighter">
+              Blog
+            </a>
+            <a href="#" class="hex-type-body-medium text-gray-lighter">
+              What we do
+            </a>
+            <a href="#" class="hex-type-body-medium text-gray-lighter">
+              Pricing
+            </a>
+          </div>
+        </div>
+        <div class="flex flex-col gap-12">
+          <p class="hex-type-h4">
+            <span class="color-white">Use case</span>
+            <span class="color-primary">.</span>
+          </p>
+          <div class="grid grid-cols-1 gap-8">
+            <a href="#" class="hex-type-body-medium text-gray-lighter">
+              Marketing
+            </a>
+            <a href="#" class="hex-type-body-medium text-gray-lighter">
+              Social Media
+            </a>
+            <a href="#" class="hex-type-body-medium text-gray-lighter">
+              Publishers
+            </a>
+            <a href="#" class="hex-type-body-medium text-gray-lighter">
+              Agencies
+            </a>
+          </div>
+        </div>
+        <div class="flex flex-col gap-12">
+          <p class="hex-type-h4">
+            <span class="color-white">Get in touch</span>
+            <span class="color-primary">.</span>
+          </p>
+          <p class="hex-type-body-medium text-gray-lighter">
+            Question or feedback? We’d love to hear from you.
+          </p>
+          {/* email input */}
+          <Button class="hex-btn hex-btn-primary hex-btn-lg">
+            <span class="hex-type-btn-lg">
+              Send
+            </span>
+          </Button>
+        </div>
+      </footer>
     </div >
+  );
+};
+
+const IconStar = () => {
+  return (
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.952 2.92731C12.6527 2.006 11.3493 2.006 11.0499 2.92731L9.53132 7.60107C9.39745 8.0131 9.01349 8.29206 8.58026 8.29206H3.66598C2.69726 8.29206 2.29448 9.53167 3.07819 10.1011L7.05393 12.9896C7.40442 13.2443 7.55108 13.6956 7.4172 14.1077L5.89861 18.7814C5.59925 19.7027 6.65374 20.4688 7.43745 19.8994L11.4132 17.0109C11.7637 16.7563 12.2383 16.7563 12.5888 17.0109L16.5645 19.8994C17.3482 20.4688 18.4027 19.7027 18.1033 18.7814L16.5847 14.1077C16.4509 13.6956 16.5975 13.2443 16.948 12.9896L20.9238 10.1011C21.7075 9.53167 21.3047 8.29206 20.336 8.29206H15.4217C14.9885 8.29206 14.6045 8.0131 14.4706 7.60107L12.952 2.92731Z" fill="#FFB703" />
+    </svg>
   );
 };
 

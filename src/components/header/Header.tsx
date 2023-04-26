@@ -28,9 +28,9 @@ const Header: Component<HeaderProps> = props => {
   onCleanup(() => window.removeEventListener('resize', handleResize));
 
   return (
-    <Show when={windowDimension() < 768} fallback={<HeaderDesktop routes={props.routes} />}>
-      <HeaderMobile routes={props.routes} />
-    </Show>
+    // <Show when={windowDimension() < 768} fallback={<HeaderDesktop routes={props.routes} />}>
+    <HeaderMobile routes={props.routes} />
+    // </Show>
   );
 };
 

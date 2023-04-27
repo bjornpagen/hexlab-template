@@ -9,4 +9,4 @@ My own code licensed under 0BSD.
 
 Rendered page looks like the below photo:
 
-![localhost_3000_(iPhone 12 Pro) (2)](https://user-images.githubusercontent.com/11238136/234942623-16320a4b-8346-4a69-8344-2eb918aa6a11.png)
+![outsmall](https://user-images.githubusercontent.com/11238136/234944575-e06571ec-4a8b-47c8-9222-58b1d9816ab8.png)

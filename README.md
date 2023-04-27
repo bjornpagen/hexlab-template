@@ -1,6 +1,6 @@
 ## Hexlab Template
 
-SolidJS Marketing Agency template.
+SolidJS + UnoCSS Marketing Agency template.
 
 Purchased from here, check copyright before using:
 https://craftwork.design/downloads/hexlab/

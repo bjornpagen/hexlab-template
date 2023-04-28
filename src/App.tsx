@@ -1,37 +1,42 @@
 import type { Component } from 'solid-js';
 
-import Header from './components/header';
 import Button from './components/button';
 
 const App: Component = () => {
-  const routes = [
-    { name: 'Home', href: '/' },
-    { name: 'About', href: '/about' },
-    { name: 'Our Services', href: '/services' },
-    { name: 'Testimonials', href: '/testimonials' },
-  ];
-
   return (
     <div>
-      <Header routes={routes} />
+      <header class="flex flex-col py-12 px-16 gap-56 lg:py-20 lg:items-center">
+        <div class="flex flex-row items-center justify-between lg:w-9/10 max-w-1036">
+          <a href="/">
+            <span class="hex-type-h4 color-black">Hexlab</span>
+            <span class="hex-type-h4 color-primary">.</span>
+          </a>
+          <Button class="invisible truncate hex-btn hex-btn-primary hex-btn-sm lg:visible">
+            <span class="hex-type-btn-sm">
+              Let's talk
+            </span>
+          </Button>
+        </div>
+      </header>
       <section class="flex flex-col gap-20 py-40 px-16 text-center items-center">
-        <p class='hex-type-display'>
+        <p class='hex-type-display max-w-620'>
           <span class="text-black">
             We're digital product creators
           </span>
           <span class='text-primary'>.</span>
         </p>
-        <p class="hex-type-body text-gray-dark">
+        <p class="hex-type-body text-gray-dark max-w-333">
           Proper business solution for your business strategy and corporation.
         </p>
-        <Button class="hex-btn hex-btn-primary hex-btn-lg w-full">
+        <Button class="hex-btn hex-btn-primary hex-btn-lg w-full sm:w-fit">
           <span class="hex-type-btn-lg">
             Let's get started
           </span>
         </Button>
+        <img src="/assets/bruvs.png" alt="bruvs" class="hidden object-scale-down sm:block w-969 h-472" />
       </section >
-      <section class="flex flex-col gap-20 py-64 px-16 text-center items-center">
-        <div class="flex flex-col">
+      <section class="flex flex-col lg:flex-row gap-20 py-64 px-16 justify-center items-center lg:py-80">
+        <div class="flex flex-col max-w-508">
           <p class='hex-type-eyebrow text-primary'>
             What we do
           </p>
@@ -40,110 +45,114 @@ const App: Component = () => {
             <span class='text-primary'>.</span>
           </p>
         </div>
-        <div class="flex flex-col gap-12 py-24 px-16 items-center">
-          <div class="h-88 w-88 flex justify-center items-center">
-            <img src='/assets/radio.png' alt='radio' class='w-64 h-64' />
-          </div>
-          <div>
-            <p class='hex-type-eyebrow text-primary'>
-              Web Design
-            </p>
-            <p class="hex-type-h4">
-              <span class="color-black">
-                Website Design
-              </span>
-              <span class="color-primary">.</span>
-            </p>
-          </div>
-          <p class="hex-type-body color-gray-dark">
-            Our Creative team made a great and beautiful websites.
-          </p>
-        </div>
-        <div class="flex flex-col gap-12 py-24 px-16 items-center">
-          <div class="h-88 w-88 flex justify-center items-center">
-            <img src='/assets/computer.png' alt='computer' class='w-64 h-64' />
-          </div>
-          <div>
-            <p class='hex-type-eyebrow text-primary'>
-              App Design
-            </p>
-            <p class="hex-type-h4">
-              <span class="color-black">
-                Mobile App Design
-              </span>
-              <span class="color-primary">.</span>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 max-w-508">
+          <div class="flex flex-col gap-12 py-24 px-16 text-center items-center">
+            <div class="h-88 w-88 flex justify-center items-center">
+              <img src='/assets/radio.png' alt='radio' class='w-64 h-64' />
+            </div>
+            <div>
+              <p class='hex-type-eyebrow text-primary'>
+                Web Design
+              </p>
+              <p class="hex-type-h4">
+                <span class="color-black">
+                  Website Design
+                </span>
+                <span class="color-primary">.</span>
+              </p>
+            </div>
+            <p class="hex-type-body color-gray-dark">
+              Our Creative team made a great and beautiful websites.
             </p>
           </div>
-          <p class="hex-type-body color-gray-dark">
-            Our Creative team made a great and beautiful apps.
-          </p>
-        </div>
-        <div class="flex flex-col gap-12 py-24 px-16 items-center">
-          <div class="h-88 w-88 flex justify-center items-center">
-            <img src='/assets/rainbow.png' alt='rainbow' class='w-64 h-64' />
-          </div>
-          <div>
-            <p class='hex-type-eyebrow text-primary'>
-              Brand Design
+          <div class="flex flex-col gap-12 py-24 px-16 text-center items-center">
+            <div class="h-88 w-88 flex justify-center items-center">
+              <img src='/assets/computer.png' alt='computer' class='w-64 h-64' />
+            </div>
+            <div>
+              <p class='hex-type-eyebrow text-primary'>
+                App Design
+              </p>
+              <p class="hex-type-h4">
+                <span class="color-black">
+                  Mobile App Design
+                </span>
+                <span class="color-primary">.</span>
+              </p>
+            </div>
+            <p class="hex-type-body color-gray-dark">
+              Our Creative team made a great and beautiful apps.
             </p>
-            <p class="hex-type-h4">
-              <span class="color-black">
+          </div>
+          <div class="flex flex-col gap-12 py-24 px-16 text-center items-center">
+            <div class="h-88 w-88 flex justify-center items-center">
+              <img src='/assets/rainbow.png' alt='rainbow' class='w-64 h-64' />
+            </div>
+            <div>
+              <p class='hex-type-eyebrow text-primary'>
                 Brand Design
-              </span>
-              <span class="color-primary">.</span>
+              </p>
+              <p class="hex-type-h4">
+                <span class="color-black">
+                  Brand Design
+                </span>
+                <span class="color-primary">.</span>
+              </p>
+            </div>
+            <p class="hex-type-body color-gray-dark">
+              Our Creative team made a great and beautiful brands.
             </p>
           </div>
-          <p class="hex-type-body color-gray-dark">
-            Our Creative team made a great and beautiful brands.
-          </p>
+          <div class="flex flex-col gap-12 py-24 px-16 text-center items-center">
+            <div class="h-88 w-88 flex justify-center items-center">
+              <img src='/assets/map.png' alt='map' class='w-64 h-64' />
+            </div>
+            <div>
+              <p class='hex-type-eyebrow text-primary'>
+                UI/UX Design
+              </p>
+              <p class="hex-type-h4">
+                <span class="color-black">
+                  UI/UX Design
+                </span>
+                <span class="color-primary">.</span>
+              </p>
+            </div>
+            <p class="hex-type-body color-gray-dark">
+              Our Creative team made a great and beautiful UI/UX designs.
+            </p>
+          </div>
         </div>
-        <div class="flex flex-col gap-12 py-24 px-16 items-center">
+      </section>
+      <section class="flex flex-col gap-x-40 gap-y-20 py-64 px-16 justify-center items-center lg:flex-row lg:py-80">
+        <img src="/assets/peeps.png" alt="peeps" class="min-w-348 w-508 object-scale-down" />
+        <div class='flex flex-col max-w-508 gap-20'>
           <div class="h-88 w-88 flex justify-center items-center">
-            <img src='/assets/map.png' alt='map' class='w-64 h-64' />
+            <img src='/assets/fan.png' alt='fan' class='w-64 h-64' />
           </div>
           <div>
             <p class='hex-type-eyebrow text-primary'>
-              UI/UX Design
+              Our team
             </p>
-            <p class="hex-type-h4">
+            <p class="hex-type-h2">
               <span class="color-black">
-                UI/UX Design
+                Know more about Hexlab
               </span>
               <span class="color-primary">.</span>
             </p>
           </div>
           <p class="hex-type-body color-gray-dark">
-            Our Creative team made a great and beautiful UI/UX designs.
+            Our team of digital product creators in tech and design bring skills above and beyond the ordinary to every project. User experience, Social media marketing, Content management system, and email marketing.
           </p>
-        </div>
-      </section>
-      <section class="flex flex-col gap-20 py-64 px-16 text-center items-center">
-        <img src="/assets/peeps.png" alt="peeps" class="w-348 h-400 pb-20" />
-        <div class="h-88 w-88 flex justify-center items-center">
-          <img src='/assets/fan.png' alt='fan' class='w-64 h-64' />
-        </div>
-        <div>
-          <p class='hex-type-eyebrow text-primary'>
-            Our team
-          </p>
-          <p class="hex-type-h2">
-            <span class="color-black">
-              Know more about Hexlab
+          <Button class="hex-btn hex-btn-secondary hex-btn-lg w-full sm:w-fit">
+            <span class="hex-type-btn-lg">
+              Learn more
             </span>
-            <span class="color-primary">.</span>
-          </p>
+          </Button>
         </div>
-        <p class="hex-type-body color-gray-dark">
-          Our team of digital product creators in tech and design bring skills above and beyond the ordinary to every project. User experience, Social media marketing, Content management system, and email marketing.
-        </p>
-        <Button class="hex-btn hex-btn-secondary hex-btn-lg w-full">
-          <span class="hex-type-btn-lg">
-            Learn more
-          </span>
-        </Button>
       </section>
-      <section class="flex flex-col gap-40 py-64 px-16 text-center items-center">
-        <div class="flex flex-col gap-20 text-center items-center">
+      <section class="flex flex-col gap-40 py-64 px-16 text-center items-center lg:py-80">
+        <div class="flex flex-col gap-20 text-center items-center max-w-548">
           <div class="h-88 w-88 flex justify-center items-center">
             <img src='/assets/bulb.png' alt='bulb' class='w-64 h-64' />
           </div>
@@ -161,13 +170,13 @@ const App: Component = () => {
           <p class="hex-type-body color-gray-dark">
             We are a digital creative agency located in LA, We focus on creating responsive websites, web design, SEO services, UI/UX Design, website with all over maintenance, hosting, domain name registration, Graphic design, and Visual identities for your business.
           </p>
-          <Button class="hex-btn hex-btn-secondary hex-btn-lg w-full">
+          <Button class="hex-btn hex-btn-secondary hex-btn-lg w-full sm:w-fit">
             <span class="hex-type-btn-lg">
               Know more
             </span>
           </Button>
         </div>
-        <div class="flex flex-col gap-20 text-center items-center">
+        <div class="grid grid-cols-1 gap-20 lg:grid-cols-3 max-w-400 lg:max-w-1036">
           <div>
             <p class='hex-type-h2 text-primary'>
               01
@@ -213,8 +222,8 @@ const App: Component = () => {
           </div>
         </div>
       </section>
-      <section class="py-64 px-16 text-center items-center">
-        <div class="flex flex-col gap-20 text-center items-center">
+      <section class="flex flex-col gap-48 py-64 px-16 text-center items-center justify-center lg:py-80">
+        <div class="flex flex-col gap-20 text-center items-center max-w-400">
           <div class="h-88 w-88 flex justify-center items-center">
             <img src='/assets/pad.png' alt='pad' class='w-64 h-64' />
           </div>
@@ -230,7 +239,18 @@ const App: Component = () => {
             </p>
           </div>
         </div>
-        <div class="flex flex-col gap-20 mt-48">
+        <div class="flex flex-col gap-20 lg:flex-row">
+          <div class="flex flex-col gap-20 text-center items-center">
+            <img src="/assets/peep.png" alt="peep" class="w-244 h-340 rounded-full" />
+            <div class="flex flex-col gap-8 text-center">
+              <p class="hex-type-h4">
+                David Snow
+              </p>
+              <p class="hex-type-body-medium color-gray">
+                Sr. UI/UX Designer
+              </p>
+            </div>
+          </div>
           <div class="flex flex-col gap-20 text-center items-center">
             <img src="/assets/peep.png" alt="peep" class="w-244 h-340 rounded-full" />
             <div class="flex flex-col gap-8 text-center">
@@ -244,83 +264,87 @@ const App: Component = () => {
           </div>
         </div>
       </section>
-      <section class="flex flex-col gap-20 py-64 px-16">
-        <div class="h-88 w-88 flex justify-center items-center">
-          <img src='/assets/stars.png' alt='stars' class='w-64 h-64' />
-        </div>
-        <div class="flex flex-col gap-20">
-          <p class="hex-type-eyebrow text-primary">
-            Testimonials
-          </p>
-          <p class="hex-type-h2">
-            <span class="color-black">
-              What our clients say about us
-            </span>
-            <span class="color-primary">.</span>
-          </p>
-          <div class="flex flex-row gap-12">
-            <Button class="flex justify-center items-center bg-primary rounded-full w-40 h-40">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M16.2541 19.7589C16.5522 19.4667 16.5793 19.0095 16.3354 18.6873L16.2541 18.595L9.52658 12L16.2541 5.40503C16.5522 5.11283 16.5793 4.65558 16.3354 4.33338L16.2541 4.24106C15.956 3.94887 15.4896 3.9223 15.161 4.16137L15.0668 4.24106L7.7459 11.418C7.44784 11.7102 7.42074 12.1675 7.66461 12.4897L7.7459 12.582L15.0668 19.7589C15.3947 20.0804 15.9262 20.0804 16.2541 19.7589Z" fill="white" />
-              </svg>
-            </Button>
-            <Button class="flex justify-center items-center bg-primary rounded-full w-40 h-40">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M7.7459 19.7589C7.44784 19.4667 7.42074 19.0095 7.66461 18.6873L7.7459 18.595L14.4734 12L7.7459 5.40503C7.44784 5.11283 7.42074 4.65558 7.66461 4.33338L7.7459 4.24106C8.04396 3.94887 8.51037 3.9223 8.83904 4.16137L8.93321 4.24106L16.2541 11.418C16.5522 11.7102 16.5793 12.1675 16.3354 12.4897L16.2541 12.582L8.93321 19.7589C8.60534 20.0804 8.07376 20.0804 7.7459 19.7589Z" fill="white" />
-              </svg>
-            </Button>
+      <section class="flex flex-col gap-20 py-64 px-16 items-center justify-center lg:py-80">
+        <div class="grid grid-cols-1 max-w-400 lg:grid-cols-3 lg:max-w-1036 gap-20">
+          <div class="flex flex-col gap-20">
+            <div class="h-88 w-88 flex justify-center items-center">
+              <img src='/assets/stars.png' alt='stars' class='w-64 h-64' />
+            </div>
+            <div>
+              <p class="hex-type-eyebrow text-primary">
+                Testimonials
+              </p>
+              <p class="hex-type-h2">
+                <span class="color-black">
+                  What our clients say about us
+                </span>
+                <span class="color-primary">.</span>
+              </p>
+            </div>
+            <div class="flex flex-row gap-12">
+              <Button class="flex justify-center items-center bg-primary rounded-full w-40 h-40">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.2541 19.7589C16.5522 19.4667 16.5793 19.0095 16.3354 18.6873L16.2541 18.595L9.52658 12L16.2541 5.40503C16.5522 5.11283 16.5793 4.65558 16.3354 4.33338L16.2541 4.24106C15.956 3.94887 15.4896 3.9223 15.161 4.16137L15.0668 4.24106L7.7459 11.418C7.44784 11.7102 7.42074 12.1675 7.66461 12.4897L7.7459 12.582L15.0668 19.7589C15.3947 20.0804 15.9262 20.0804 16.2541 19.7589Z" fill="white" />
+                </svg>
+              </Button>
+              <Button class="flex justify-center items-center bg-primary rounded-full w-40 h-40">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.7459 19.7589C7.44784 19.4667 7.42074 19.0095 7.66461 18.6873L7.7459 18.595L14.4734 12L7.7459 5.40503C7.44784 5.11283 7.42074 4.65558 7.66461 4.33338L7.7459 4.24106C8.04396 3.94887 8.51037 3.9223 8.83904 4.16137L8.93321 4.24106L16.2541 11.418C16.5522 11.7102 16.5793 12.1675 16.3354 12.4897L16.2541 12.582L8.93321 19.7589C8.60534 20.0804 8.07376 20.0804 7.7459 19.7589Z" fill="white" />
+                </svg>
+              </Button>
+            </div>
           </div>
-        </div>
-        <div class="flex flex-col gap-12 p-16">
-          <img src="/assets/quote.png" alt="quote" class="w-28 h-28" />
-          <p class="hex-type-body text-gray-dark">
-            I’m trusted my company in allies and the results have been satisfying because my company has growing.
-          </p>
-          <img src="/assets/theresa.png" alt="theresa" class="w-56 h-56 rounded-full" />
-          <div class="flex flex-col gap-8">
-            <p class="hex-type-h4 text-black">
-              Theresa Webb
+          <div class="flex flex-col gap-12 p-16">
+            <img src="/assets/quote.png" alt="quote" class="w-28 h-28" />
+            <p class="hex-type-body text-gray-dark">
+              I’m trusted my company in allies and the results have been satisfying because my company has growing.
             </p>
-            <p class="hex-type-body-medium text-gray">
-              Product Manager
-            </p>
+            <img src="/assets/theresa.png" alt="theresa" class="w-56 h-56 rounded-full" />
+            <div class="flex flex-col gap-8">
+              <p class="hex-type-h4 text-black">
+                Theresa Webb
+              </p>
+              <p class="hex-type-body-medium text-gray">
+                Product Manager
+              </p>
+            </div>
+            <div class="flex flex-row gap-4">
+              <IconStar />
+              <IconStar />
+              <IconStar />
+              <IconStar />
+              <IconStar />
+            </div>
           </div>
-          <div class="flex flex-row gap-4">
-            <IconStar />
-            <IconStar />
-            <IconStar />
-            <IconStar />
-            <IconStar />
-          </div>
-        </div>
-        <div class="flex flex-col gap-12 p-16">
-          <img src="/assets/quote.png" alt="quote" class="w-28 h-28" />
-          <p class="hex-type-body text-gray-dark">
-            I’m trusted my company in allies and the results have been satisfying because my company has growing.
-          </p>
-          <img src="/assets/theresa.png" alt="theresa" class="w-56 h-56 rounded-full" />
-          <div class="flex flex-col gap-8">
-            <p class="hex-type-h4 text-black">
-              Theresa Webb
+          <div class="flex flex-col gap-12 p-16">
+            <img src="/assets/quote.png" alt="quote" class="w-28 h-28" />
+            <p class="hex-type-body text-gray-dark">
+              I’m very fortunate to trust my company to allies and now my company income is increasing.
             </p>
-            <p class="hex-type-body-medium text-gray">
-              Product Manager
-            </p>
-          </div>
-          <div class="flex flex-row gap-4">
-            <IconStar />
-            <IconStar />
-            <IconStar />
-            <IconStar />
-            <IconStar />
+            <img src="/assets/tarron.png" alt="tarron" class="w-56 h-56 rounded-full" />
+            <div class="flex flex-col gap-8">
+              <p class="hex-type-h4 text-black">
+                Tarron Rop
+              </p>
+              <p class="hex-type-body-medium text-gray">
+                CEO
+              </p>
+            </div>
+            <div class="flex flex-row gap-4">
+              <IconStar />
+              <IconStar />
+              <IconStar />
+              <IconStar />
+              <IconStar />
+            </div>
           </div>
         </div>
       </section >
-      <section class="flex flex-col gap-20 py-64 px-16 text-center items-center">
+      <section class="flex flex-col gap-20 py-64 px-16 text-center items-center lg:py-80">
         <div class="flex items-center justify-center w-136 h-136">
-          <img src="/assets/mailbox.png" alt="mailbox" class="w-120 h-120" />
+          <img src="/assets/mail.png" alt="mail" class="w-120 h-120" />
         </div>
-        <div>
+        <div class="max-w-425">
           <p class="hex-type-eyebrow text-primary">
             Subscribe
           </p>
@@ -329,11 +353,10 @@ const App: Component = () => {
             <span class="color-primary">.</span>
           </p>
         </div>
-        <p class="hex-type-body text-gray-dark">
+        <p class="hex-type-body text-gray-dark max-w-412">
           We recommended you to subscribe to our newspaper, drop your email below to get daily update about us.
         </p>
-        {/* TODO: email input */}
-        <div class="grid relative w-full">
+        <div class="grid relative w-full max-w-480">
           <input type="text" placeholder="Enter your email address" class="h-72 rounded-full pl-24 pr-8 w-full b b-gray-light">
           </input>
           <div class="absolute end-0 w-40% w-full h-full flex item-center flex-row-reverse p-8 pointer-events-none">
@@ -345,83 +368,85 @@ const App: Component = () => {
           </div>
         </div>
       </section>
-      <footer class="flex flex-col gap-40 py-64 px-16 bg-gray-darker">
-        <div class="flex flex-col gap-12">
-          <p class="hex-type-h4">
-            <span class="color-white">Hexlab</span>
-            <span class="color-primary">.</span>
-          </p>
-          <p class="hex-type-body-medium text-gray-lighter">
-            Hexlab is a digital agency that has evolved to meet the changing needs of marketing in the digital age.
-          </p>
-        </div>
-        <div class="flex flex-col gap-12">
-          <p class="hex-type-h4">
-            <span class="color-white">About</span>
-            <span class="color-primary">.</span>
-          </p>
-          <div class="grid grid-cols-2 gap-8 w-55/89">
-            <a href="#" class="hex-type-body-medium text-gray-lighter">
-              About Us
-            </a>
-            <a href="#" class="hex-type-body-medium text-gray-lighter">
-              Services
-            </a>
-            <a href="#" class="hex-type-body-medium text-gray-lighter">
-              Our team
-            </a>
-            <a href="#" class="hex-type-body-medium text-gray-lighter">
-              Portfolio
-            </a>
-            <a href="#" class="hex-type-body-medium text-gray-lighter">
-              News
-            </a>
-            <a href="#" class="hex-type-body-medium text-gray-lighter">
-              Blog
-            </a>
-            <a href="#" class="hex-type-body-medium text-gray-lighter">
-              What we do
-            </a>
-            <a href="#" class="hex-type-body-medium text-gray-lighter">
-              Pricing
-            </a>
+      <footer class="flex flex-col py-64 px-16 bg-gray-darker lg:py-80 items-center justify-center">
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-y-40 gap-x-20 max-w-1036">
+          <div class="flex flex-col gap-12">
+            <p class="hex-type-h4">
+              <span class="color-white">Hexlab</span>
+              <span class="color-primary">.</span>
+            </p>
+            <p class="hex-type-body-medium text-gray-lighter">
+              Hexlab is a digital agency that has evolved to meet the changing needs of marketing in the digital age.
+            </p>
           </div>
-        </div>
-        <div class="flex flex-col gap-12">
-          <p class="hex-type-h4">
-            <span class="color-white">Use case</span>
-            <span class="color-primary">.</span>
-          </p>
-          <div class="grid grid-cols-1 gap-8">
-            <a href="#" class="hex-type-body-medium text-gray-lighter">
-              Marketing
-            </a>
-            <a href="#" class="hex-type-body-medium text-gray-lighter">
-              Social Media
-            </a>
-            <a href="#" class="hex-type-body-medium text-gray-lighter">
-              Publishers
-            </a>
-            <a href="#" class="hex-type-body-medium text-gray-lighter">
-              Agencies
-            </a>
+          <div class="flex flex-col gap-12">
+            <p class="hex-type-h4">
+              <span class="color-white">About</span>
+              <span class="color-primary">.</span>
+            </p>
+            <div class="grid grid-cols-2 gap-8 w-55/89 lg:w-full">
+              <a href="#" class="hex-type-body-medium text-gray-lighter">
+                About Us
+              </a>
+              <a href="#" class="hex-type-body-medium text-gray-lighter">
+                Services
+              </a>
+              <a href="#" class="hex-type-body-medium text-gray-lighter">
+                Our team
+              </a>
+              <a href="#" class="hex-type-body-medium text-gray-lighter">
+                Portfolio
+              </a>
+              <a href="#" class="hex-type-body-medium text-gray-lighter">
+                News
+              </a>
+              <a href="#" class="hex-type-body-medium text-gray-lighter">
+                Blog
+              </a>
+              <a href="#" class="hex-type-body-medium text-gray-lighter">
+                What we do
+              </a>
+              <a href="#" class="hex-type-body-medium text-gray-lighter">
+                Pricing
+              </a>
+            </div>
           </div>
-        </div>
-        <div class="flex flex-col gap-12">
-          <p class="hex-type-h4">
-            <span class="color-white">Get in touch</span>
-            <span class="color-primary">.</span>
-          </p>
-          <p class="hex-type-body-medium text-gray-lighter">
-            Question or feedback? We’d love to hear from you.
-          </p>
-          {/* email input */}
-          <input type="text" placeholder="Enter your email address" class="h-48 p-16 w-full b b-white text-gray hex-type-sm rd-4" />
-          <Button class="hex-btn hex-btn-primary hex-btn-md">
-            <span class="hex-type-btn-md">
-              Send
-            </span>
-          </Button>
+          <div class="flex flex-col gap-12">
+            <p class="hex-type-h4">
+              <span class="color-white">Use case</span>
+              <span class="color-primary">.</span>
+            </p>
+            <div class="grid grid-cols-1 gap-8">
+              <a href="#" class="hex-type-body-medium text-gray-lighter">
+                Marketing
+              </a>
+              <a href="#" class="hex-type-body-medium text-gray-lighter">
+                Social Media
+              </a>
+              <a href="#" class="hex-type-body-medium text-gray-lighter">
+                Publishers
+              </a>
+              <a href="#" class="hex-type-body-medium text-gray-lighter">
+                Agencies
+              </a>
+            </div>
+          </div>
+          <div class="flex flex-col gap-12">
+            <p class="hex-type-h4">
+              <span class="color-white">Get in touch</span>
+              <span class="color-primary">.</span>
+            </p>
+            <p class="hex-type-body-medium text-gray-lighter">
+              Question or feedback? We’d love to hear from you.
+            </p>
+            {/* email input */}
+            <input type="text" placeholder="Enter your email address" class="h-48 p-16 w-full b b-white text-gray hex-type-sm rd-4" />
+            <Button class="hex-btn hex-btn-primary hex-btn-md">
+              <span class="hex-type-btn-md">
+                Send
+              </span>
+            </Button>
+          </div>
         </div>
       </footer>
     </div >
